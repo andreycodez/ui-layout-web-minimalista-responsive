@@ -1,0 +1,78 @@
+.contacts
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    margin-top: 60px
+    margin-bottom: 40px
+
+.contact-item
+    display: flex
+    flex-direction: column
+    justify-content: start
+    align-items: center
+    p
+        color: #4F5051
+        a
+            text-decoration: none
+            color: #4F5051
+            &:hover
+                color: #FFFFFF
+
+.contact-title
+    color: #ffffff
+
+
+@media (min-width: 720px) and (max-width: 1024px)
+    .contacts
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: 1fr 1fr
+        margin-top: 60px
+        margin-bottom: 40px
+
+    .address
+        grid-column: 1 / span 1
+        grid-row: 1 / span 1
+
+    .mail
+        grid-column: 1 / span 1
+        grid-row: 2 / span 1
+
+    .phones
+        grid-column: 2 / span 1
+        grid-row: 1 / span 2
+
+    .contact-item
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: center
+
+@media (min-width: 320px) and (max-width: 768px)
+    .contacts
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        margin-top: 0
+        margin-bottom: 20px
+
+
+    .address
+        grid-column: 1 / span 1
+        grid-row: 1 / span 1
+
+    .mail
+        grid-column: 1 / span 1
+        grid-row: 2 / span 1
+
+    .phones
+        grid-column: 1 / span 1
+        grid-row: 3 / span 1
+
+    .contact-item
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: center
+        p
+            margin-bottom: 10px
+            line-height: 28px

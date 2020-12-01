@@ -1,0 +1,77 @@
+.social-list
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: 80px
+    color: #4F5051
+    gap: 20px
+
+.social-item
+    align-self: center
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 700
+    color: #4F5051
+    display: flex
+    flex-direction: row
+    align-items: center
+    &:hover
+        color: #FFFFFF
+        .social-logo
+            background-color: #FFFFFF
+
+.social-logo
+    width: 31px
+    height: 31px
+    border-radius: 15px
+    background-color: #4F5051
+    margin-right: 10px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    color: #272829
+    i
+        margin-top: 3px
+
+@media (min-width: 720px) and (max-width: 1024px)
+    .social-list
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+    .social-item
+        justify-self: center
+        span
+            display: none
+    .social-logo
+        margin: 0
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        color: #272829
+        i
+            margin-top: 3px
+
+@media (min-width: 0px) and (max-width: 720px)
+    .social-list
+        display: grid
+        grid-template-columns: 1fr 40px 40px 40px 40px 1fr
+        grid-template-rows: 1fr 1fr
+        grid-template-areas: ". facebook instagram twitter linkedin ."
+        margin: 0 auto
+    .social-item
+        justify-self: center
+        span
+            display: none
+
+    .facebook
+        grid-area: facebook
+
+    .twitter
+        grid-area: twitter
+
+    .linkedin
+        grid-area: linkedin
+
+    .instagram
+        grid-area: instagram

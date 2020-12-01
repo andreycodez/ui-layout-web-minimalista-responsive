@@ -1,0 +1,101 @@
+.team-list
+    display: grid
+    grid-template-columns: 30px 1fr 1fr 1fr 1fr 30px
+    gap: 20px
+
+.team-item
+    justify-self: center
+    img
+        width: 150px
+        height: 150px
+    .team-item-socials
+        list-style-type: none
+        margin-top: 10px
+        .team-item-social-item
+            float: left
+            margin-right: 10px
+            a
+                text-decoration: none
+                color: #E0E1E2
+                &:hover
+                    color: #C7C7C7
+    .team-item-name
+        margin-top: 10px
+
+.arrow-left
+    align-self: center
+    justify-self: start
+    color: #E7E8E9
+    font-size: 30px
+    height: 30px
+    &:hover
+        color: #C7C7C7
+
+.arrow-right
+    align-self: center
+    justify-self: end
+    color: #E7E8E9
+    font-size: 30px
+    height: 30px
+    &:hover
+        color: #C7C7C7
+
+
+@media (min-width: 720px) and (max-width: 1024px)
+    .team-list
+        display: grid
+        grid-template-columns: 30px 1fr 1fr 30px
+        grid-template-rows: repeat(2, 1fr)
+        gap: 40px
+
+    .team-item
+        img
+            width: 150px
+            height: 150px
+        .team-item-socials
+            margin-top: 10px
+            .team-item-social-item
+                margin-right: 10px
+        .team-item-name
+            margin-top: 10px
+    .arrow-left
+        grid-column: 1 / span 1
+        grid-row: 1 / span 2
+
+    .arrow-right
+        grid-column: 4 / span 1
+        grid-row: 1 / span 2
+
+@media (min-width: 0px) and (max-width: 720px)
+    .team-list
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(4, 1fr)
+        gap: 40px
+    .team-item
+        display: flex
+        padding-bottom: 30px
+        border-bottom: 1px solid #E7E8E9
+        &:last-of-type
+            border: none
+        img
+            width: 150px
+            height: 150px
+            margin-right: 20px
+        .team-item-socials
+            margin-top: 30px
+            font-size: 24px
+            .team-item-social-item
+                margin-right: 20px
+        .team-item-name
+            margin-top: 10px
+
+    .team-info
+        display: flex
+        flex-direction: column
+        justify-content: center 
+
+    .arrow-left
+        display: none
+    .arrow-right
+        display: none
