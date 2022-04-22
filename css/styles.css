@@ -19,12 +19,12 @@ body {
   font-size: 18px;
 }
 
-header, section, pseudo-section {
+header, section, .pseudo-section {
   max-width: 964px;
   display: flex;
 }
 
-header, section, pseudo-section, footer {
+header, section, .pseudo-section, footer {
   padding: 0 30px;
 }
 
