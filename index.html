@@ -189,28 +189,5 @@
             Some more text goes here.
         </div>
     </footer>
-<!--    <div class="top-menu-modal" id="menu-modal">-->
-<!--        <a href="#">Home</a>-->
-<!--        <a href="#">About Us</a>-->
-<!--        <a href="#">Contacts</a>-->
-<!--    </div>-->
-<!--    <div class="mobile-menu-bar">-->
-<!--        <button aria-expanded="false" aria-controls="menu-modal" class="mobile-menu-control">-->
-<!--            <span class="open"><i class="fa fa-bars"></i></span>-->
-<!--            <span class="close"><i class="fa fa-times"></i></span>-->
-<!--        </button>-->
-<!--    </div>-->
-
-    <script>
-        const navButton = document.querySelector('button[aria-expanded]');
-
-        function toggleNav({ target }) {
-            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-            navButton.setAttribute('aria-expanded', !expanded);
-        }
-
-        navButton.addEventListener('click', toggleNav);
-    </script>
-
 </body>
 </html>
