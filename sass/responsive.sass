@@ -1,0 +1,56 @@
+@media (max-width: 1024px)
+  body
+    font-size: 20px
+
+  .top-nav, .arrow-left, .arrow-right
+    display: none
+
+  .trigram
+    display: block
+
+  .mt-40
+    margin-top: 0
+
+@media (min-width: 320px) AND (max-width: 1024px)
+  .object-list
+    flex-direction: column
+
+  .object-item
+    flex-direction: row
+    width: 100%
+    gap: 30px
+    align-items: center
+
+  .team-list
+    gap: 40px
+    flex-wrap: wrap
+    justify-content: space-around
+
+  .team-item
+    width: 300px
+    img
+      width: 100%
+      height: 100%
+
+@media (min-width: 320px) AND (max-width: 767px)
+  .object-item, .contacts
+    flex-direction: column
+
+  .object-item
+    gap: 10px
+    text-align: center
+
+  .team-item
+    text-align: center
+
+  .team-item-socials
+    display: flex
+    justify-content: center
+    font-size: 28px
+
+  .social-list
+    justify-content: center
+    gap: 50px
+
+  .social-item > span
+      display: none
